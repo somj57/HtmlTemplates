@@ -16,18 +16,20 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!-- font awesom -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
 
   <section id="title">
-    <div class="container-fluid">
+    <div class="container-fluid" style="overflow :hidden;">
       <!-- navigation bar -->
-      <nav class="navbar navbar-expand-sm navbar-dark stickey-top" style="background-color: #ff4c68;">
-        <a class="navbar-brand" href="https://twitter.com/somj57">
-          <img src="images/som7.ico" width="30" height="30" alt="" loading="lazy"> Somya Jaiswal</a>
+      <nav class="navbar navbar-expand-sm navbar-dark stickey-top" style="background-color: #ff4c68; font-size:1.5rem;">
+          <img src="images/doggy.png" width="30" height="30" alt="" loading="lazy"> Tindog
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,9 +61,9 @@
       <div class="row">
         <div class="col-lg-6">
           <h1 class="heading">Meet new and interesting dogs nearby.</h1>
-          <div class="buttton-download"style="padding-left:29%;">
-          <button type="button"class="btn btn-dark btn-lg Download-btn"> Download</button>
-          <button type="button"class="btn btn-outline-light btn-lg Download-btn"><i class='fab fa-google-play'></i> Download</button>
+          <div class="buttton-download" style="padding-left:29%;">
+            <button type="button" class="btn btn-dark btn-lg Download-btn"> Download</button>
+            <button type="button" class="btn btn-outline-light btn-lg Download-btn"><i class='fab fa-google-play'></i> Download</button>
           </div>
         </div>
         <div class="col-lg-6">
@@ -75,30 +77,64 @@
   <!-- Features -->
 
   <section id="features">
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <i class="icon fas fa-check-circle fa-5x"></i>
+        <h3>Easy to use.</h3>
+        <p> So easy to use, even your dog could do it. </p>
+      </div>
 
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-5x "></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
 
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
-
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
-
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-5x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
   </section>
 
 
   <!-- Testimonials -->
 
   <section id="testimonials">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+      </ol>
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="heading2">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
+          <!-- <em>Pebbles, New York</em> -->
+          <span class="caption">Pebbles, New York</span>
+        </div>
+        <div class="carousel-item">
+          <h2 class="heading2">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonials-image" src="images/som7.png" alt="lady-profile">
+          <!-- <em>Beverly, Illinois</em> -->
+          <span class="caption">Somya, Jabalpur</span>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+
+
+    </div>
 
   </section>
 
@@ -106,10 +142,10 @@
   <!-- Press -->
 
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
+    <img class="testimonials-image2" src="images/techcrunch.png" alt="tc-logo">
+    <img class="testimonials-image2" src="images/tnw.png" alt="tnw-logo">
+    <img class="testimonials-image2" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="testimonials-image2" src="images/mashable.png" alt="mashable-logo">
 
   </section>
 
