@@ -4,6 +4,13 @@ body{
 p{
   color: #8f8f8f
 }
+
+.container-fluid{
+  padding-top: 1%;
+  padding-bottom: 6%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
 .heading2{
   font-family: 'Russo One', sans-serif;
   font-size: 3rem;
@@ -14,26 +21,16 @@ p{
   font-family: 'Russo One', sans-serif;
   font-size: 4.5rem;
   line-height: 1.5;
-  /* padding-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%; */
   padding-left: 5%;
   padding-right: 5%;
 }
 .btn-download1{
 text-align: center;
-
 }
 .Download-btn{
   margin: 1rem;
 }
-.container-fluid{
-  padding-top: 1%;
-  padding-bottom: 6%;
-  padding-left: 15%;
-  padding-right: 15%;
-}
+
 #title{
   background-color: #ff4c69;
   font-weight: bold;
@@ -71,7 +68,7 @@ text-align: center;
   position: relative;
   z-index: 1;
 }
-/* navbar */
+/*              navbar                     */
 .navbar{
   padding-bottom: 0 0 4.5rem;
 }
@@ -82,9 +79,6 @@ text-align: center;
 .nav-item{
   padding: 0 15px;
 }
-
-
-
 .feature-box{
   text-align: center;
   padding: 5%;
@@ -147,9 +141,6 @@ text-align: center;
   padding: 7% 15%;
 
 }
-/* .ending-footer{
-    margin: 80px;
-} */
 .cta-heading{
   font-family: 'Russo One', sans-serif;
 
