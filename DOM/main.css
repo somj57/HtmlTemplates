@@ -1,0 +1,17 @@
+.Button1:hover{
+  color: red;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+.la:hover{
+  color: green;
+}
+.da:hover{
+  color: green;
+}
+.huge{
+  color: red;
+  font-size: 10rem;
+  font-weight: bold;
+}
