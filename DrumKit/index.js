@@ -1,5 +1,6 @@
 var noOfButtons = document.querySelectorAll(".drum").length;
 
+//Detecting button press
 for (var i = 0; i < noOfButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     //this.style.color = "white";
@@ -8,12 +9,14 @@ for (var i = 0; i < noOfButtons; i++) {
   });
 };
 
+//detecting key press
 document.addEventListener("keydown", function() {
   //console.log(event.key);
   var btn = event.key;
   makeSound(btn);
 });
 
+//making corrosponding sound
 function makeSound(btn) {
   if (btn === 'w') {
     var audio = new Audio("sounds/tom-1.mp3");
