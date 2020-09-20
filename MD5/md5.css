@@ -4,12 +4,16 @@ body{
    font-family: 'Oswald', sans-serif;
 }
 h1{
-  margin: 3rem;
-  text-align: center;
   font-family: 'Grandstander', cursive;
 }
 .section1{
-  margin-left: 25rem;
   line-height: 2rem;
-  text-align: center;
+  
+
+}
+.maincontent{
+  background-color: rgba(184 ,226 ,214 ,0.5);
+  line-height: 2rem;
+  margin: 5rem;
+  padding: 2rem;
 }
