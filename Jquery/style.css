@@ -1,0 +1,12 @@
+body{
+  background-color: rgba(183, 220, 209,0.5);
+  line-height: 2;
+}
+.big-title{
+  font-size: 5rem;
+  color: yellow;
+  font-family: cursive;
+}
+.margin50{
+  margin: 50px;
+}
